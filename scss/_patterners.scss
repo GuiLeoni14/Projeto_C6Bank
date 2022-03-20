@@ -1,0 +1,54 @@
+.btn{
+    cursor: pointer;
+    padding: 0rem 5rem;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    &-conta{
+        background-color: $yellow;
+        color: $gray-100;
+    }
+}
+
+.card{
+    width: 100%;
+    max-width: 25.9rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    .img{
+        position: relative;
+        &::before{  
+            position: absolute;
+            content: "";
+            width: 1.5rem;
+            height: 0.2rem;
+            background-color: $yellow;
+            bottom: -1.1rem;
+        }
+    }
+    h4{
+        margin-top: 2.9rem;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 150%;
+        color: $gray-100;
+    }
+    p{
+        margin-top: 0.8rem;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: $gray-200;
+    }
+}
